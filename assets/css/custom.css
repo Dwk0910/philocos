@@ -3,7 +3,7 @@ Custom Css
 */
 
 .product-card {
-    transition: all;
+    transition: all ease-in-out;
     transition-duration: .2s;
 }
 
