@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PHILOCOS: Products</title>
+    <title>PHILOCOS - Products</title>
 
     <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
@@ -15,7 +15,43 @@
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <style>
+        /* 기본 스타일 */
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; color: #1d1d1f; }
+        h1, h2, h3, p, li { margin: 0; padding: 0; }
+        ul { list-style: none; padding: 0; }
+        a { text-decoration: none; color: inherit; }
+
+        /* 애니메이션 기본 상태: 투명하고 아래로 약간 이동한 상태 */
+        [data-animation="fade-up"] { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+        [data-animation="fade-in"] { opacity: 0; transition: opacity 1s ease-in; }
+
+        /* 애니메이션 활성화 상태: 화면에 나타났을 때 */
+        [data-animation="fade-up"].animated { opacity: 1; transform: translateY(0); }
+        [data-animation="fade-in"].animated { opacity: 1; }
+
+        /* 섹션별 스타일 */
+        section { min-height: 100vh; padding: 100px 5%; display: flex; flex-direction: column; justify-content: center; }
+        .content { max-width: 800px; margin: auto; text-align: left; }
+        .section-title { font-size: 60px; font-weight: 700; margin-bottom: 20px; text-align: center; }
+        .section-subtitle { font-size: 30px; line-height: 1.5; text-align: center; margin-bottom: 50px; }
+        .product-info { font-size: 20px; line-height: 1.8; margin-bottom: 30px; }
+        .detail-list li { font-size: 18px; line-height: 2; margin-bottom: 15px; }
+
+        /* 이미지 컨테이너 스타일 */
+        .image-container { width: 100%; height: 500px; margin: 80px 0; background-color: #e0e0e0; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .image-container img { width: 100%; height: 100%; object-fit: cover; }
+        .image-container span { font-size: 24px; color: #888; text-align: center; }
+
+        /* 다크 모드 섹션 스타일 */
+        .dark-section { background-color: #1d1d1f; color: #fff; }
+        .dark-section .section-title, .dark-section .section-subtitle, .dark-section .product-info, .dark-section .detail-list li { color: #fff; }
+        .dark-section .image-container { background-color: #333; }
+        .dark-section .image-container span { color: #aaa; }
+    </style>
 </head>
+
 <body>
 <!-- Start Top Nav -->
 <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
@@ -90,7 +126,222 @@
         </form>
     </div>
 </div>
-<!-- Start Script -->
+
+
+<!-- ************** 여기 ****************** -->
+
+
+<!-- IN_JET M Section (Light) -->
+<section id="IN_JET_M" style="background-color: #fff;">
+    <div class="content">
+        <h1 class="section-title" data-animation="fade-in">IN_JET M</h1>
+        <p class="section-subtitle" data-animation="fade-up">지친 피부에 생명력을 불어넣다.</p>
+        <div class="image-container" data-animation="fade-in">
+
+        </div>
+        <div data-animation="fade-up">
+            <p class="product-info">
+                필로코스 <strong>IN_JET M</strong>은 혈행 개선, 염증 개선, 진정, 장벽 복원 등 4가지 핵심 효능을 제공하는 바이오 미네랄 뷰티 케어 제품입니다. 사포닌(진세노사이드), 폴리페놀, 비타민 등이 피부 세포 대사를 촉진해 지친 피부에 활력과 순환, 재생 효과를 선사합니다.
+            </p>
+            <h3 class="product-info" style="font-weight: 600; font-size: 22px; margin-top: 50px;">주요 효능</h3>
+            <ul class="detail-list">
+                <li data-animation="fade-up">
+                    <strong>혈행 개선 및 톤업</strong>: 국소 적용 시 모세혈관 순환을 개선하여 피부 혈색이 맑아지고 톤업 효과를 기대할 수 있습니다.
+                </li>
+                <li data-animation="fade-up">
+                    <strong>염증 완화 및 회복</strong>: 미네랄과 아미노산이 피부 컨디션을 조절하고 염증을 완화하여 손상된 피부 장벽을 회복시킵니다.
+                </li>
+                <li data-animation="fade-up">
+                    <strong>수분 지속</strong>: 사포닌과 당류가 수분 결합력을 높여 피부의 지속적인 보습에 기여합니다.
+                </li>
+            </ul>
+        </div>
+        <div class="image-container" data-animation="fade-in">
+
+        </div>
+        <div data-animation="fade-up">
+            <h3 class="product-info" style="font-weight: 600; font-size: 22px; margin-top: 50px;">최상의 배합 바이오 미네랄 BioElixir™</h3>
+            <ul class="detail-list">
+                <li data-animation="fade-up">
+                    <strong>B</strong>: 피부 장벽 강화, 항염, 항균, 항산화 재생, 모발 강화
+                </li>
+                <li data-animation="fade-up">
+                    <strong>Si</strong>: 재생, 탄력 강화, 항염, 모발 생장 촉진
+                </li>
+                <li data-animation="fade-up">
+                    <strong>Mg</strong>: 피부 장벽 회복, 항산화, 염증 억제
+                </li>
+                <li data-animation="fade-up">
+                    <strong>Mn</strong>: 항염, 세포 손상 방어, 색소 조절 (색소 침착, 기미 개선)
+                </li>
+                <li data-animation="fade-up">
+                    <strong>Sr</strong>: 염증 완화, 민감성/알레르기 완화, 피부 및 두피 진정
+                </li>
+                <li data-animation="fade-up">
+                    <strong>Ca</strong>: 피부 톤 균일화, 노화 지연, 항염, 모낭 건강 유지, 혈류 공급
+                </li>
+            </ul>
+            <p class="product-info" data-animation="fade-up" style="margin-top: 50px;">
+                <strong>Bi-M Elixir</strong>는 특허 원료인 99.9% 고순도 바이오 미네랄을 핵심 성분으로 하며, 나노 입자로 구성되어 염증 완화 효과가 빠릅니다. <strong>'천연 스테로이드'</strong>라는 별칭을 가질 만큼 탁월한 효능을 자랑하며, 세포 탈수 시 칼륨 채널을 여는 물질의 캐리어 역할을 합니다.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Volume DNA Section (Dark) -->
+<section id="Volume_DNA" class="dark-section">
+    <div class="content">
+        <h1 class="section-title" data-animation="fade-in">Volume DNA</h1>
+        <p class="section-subtitle" data-animation="fade-up">시간을 거스르는 탄력의 비밀.</p>
+        <div class="image-container" data-animation="fade-in">
+
+        </div>
+        <div data-animation="fade-up">
+            <p class="product-info">
+                필로코스 <strong>Volume DNA</strong>는 가장 유지가 높은 <strong>DNA 재조합 인간형 콜라겐</strong> 성분으로 피부 탄력과 주름을 줄이고 볼륨을 높여주는 고농축 콜라겐 제품입니다.
+                하이드롤라이즈드 인체 줄기세포 배양액, PDRN/PN 고함량 성분이 산과 결합하여 피부 깊숙이 침투, 콜라겐 합성을 촉진함으로써 더욱 젊고 탄력 있는 피부로 가꿔줍니다.
+            </p>
+            <h3 class="product-info" style="font-weight: 600; font-size: 22px; margin-top: 50px;">장기적인 유지 효과</h3>
+            <p class="product-info" data-animation="fade-up">
+                동물 모델 및 임상시험을 통해 재조합 콜라겐이 수분 유지, 콜라겐 생성 촉진 및 볼륨감, 피부 탄력 개선 효과를 <strong>최소 3개월 이상</strong> 유지하며, 일부 연구 사례에서는 <strong>6개월 이상</strong> 유지 가능성을 보였습니다. 기존 PLLA 등의 제품에서 발생할 수 있는 결절 뭉침 위험이 없습니다.
+            </p>
+        </div>
+        <div class="image-container" data-animation="fade-in">
+            [Image comparing different types of collagen]
+        </div>
+        <div data-animation="fade-up">
+            <h3 class="product-info" style="font-weight: 600; font-size: 22px; margin-top: 50px;">콜라겐 종류별 비교</h3>
+            <ul class="detail-list">
+                <li data-animation="fade-up">
+                    <strong>동물유래 콜라겐</strong>: 근골격계 및 조직 재생에 효과적이지만, 돼지나 소 유래 성분은 알레르기 및 면역 부작용의 위험성이 있습니다.
+                </li>
+                <li data-animation="fade-up">
+                    <strong>어류 콜라겐</strong>: 짧은 지속성을 보완하기 위한 화학 가교로 인해 잔류 독성 염증 우려가 존재합니다.
+                </li>
+                <li data-animation="fade-up">
+                    <strong>식물유래 콜라겐</strong>: 식물에는 콜라겐 단백질이 없어 유사 펩타이드 형태로 사용되며, 주로 화장품 도포용으로 활용됩니다.
+                </li>
+                <li data-animation="fade-up">
+                    <strong>DNA 재조합 인간형 콜라겐</strong>: 유전자 재조합 기술을 통해 인간 콜라겐 유전자를 생산하여 인체 유사성이 높고, 면역 반응이 낮으며 고순도를 자랑합니다.
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- IN_JET P Section (Light) -->
+<section id="IN_JET_P" style="background-color: #fff;">
+    <div class="content">
+        <h1 class="section-title" data-animation="fade-in">IN_JET P</h1>
+        <p class="section-subtitle" data-animation="fade-up">칙칙함은 지우고, 건강한 광채를 채우다.</p>
+        <div class="image-container" data-animation="fade-in">
+
+        </div>
+        <div data-animation="fade-up">
+            <p class="product-info">
+                <strong>IN_JET P</strong>는 섬유아세포 기능 향상을 위한 최상의 환경 조성을 목표로 제조되었습니다.
+                피부 친화성에 가장 적합한 분자량 <strong>140만 Daltons</strong>의 히알루론산을 포함, 다양한 유효 성분들의 복합적인 작용으로 칙칙하고 어두운 피부를 밝고 건강하게 변화시킵니다.
+            </p>
+            <h3 class="product-info" style="font-weight: 600; font-size: 22px; margin-top: 50px;">핵심 성분과 그 효능</h3>
+            <ul class="detail-list">
+                <li data-animation="fade-up">
+                    <strong>히알루론산</strong>: 최상의 분자량으로 수분 공급과 재생 효과를 극대화합니다.
+                </li>
+                <li data-animation="fade-up">
+                    <strong>9개 비타민</strong>: 세포 생체 기능 자극 및 피부 활력 증진에 필수적인 역할을 합니다.
+                </li>
+                <li data-animation="fade-up">
+                    <strong>14개 펩타이드</strong>: 피부의 신진대사를 향상시켜 건강한 피부 상태를 유지하도록 돕습니다.
+                </li>
+                <li data-animation="fade-up">
+                    <strong>17개 아미노산</strong>: 피부 장벽을 회복하고 손상된 부분을 개선하며, 염증 완화에 기여합니다.
+                </li>
+                <li data-animation="fade-up">
+                    <strong>코엔자임</strong>: 강력한 항산화 성분으로 활성산소(ROS)를 억제하여 주름 및 탄력 저하를 예방합니다.
+                </li>
+                <li data-animation="fade-up">
+                    <strong>항산화제</strong>: 활성산소를 제거하고, 국소 적용 시 모세혈관 순환을 개선하여 피부 혈색을 맑게 하고 톤업 효과를 줍니다.
+                </li>
+            </ul>
+        </div>
+        <div class="image-container" data-animation="fade-in">
+
+        </div>
+        <div data-animation="fade-up">
+            <p class="product-info" style="margin-top: 50px;">
+                이 모든 성분들이 최상의 비율로 배합되어 피부를 근본적으로 개선하는 데 도움을 줍니다.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- IN_JET V Section (Dark) -->
+<section id="IN_JET_V" class="dark-section">
+    <div class="content">
+        <h1 class="section-title" data-animation="fade-in">IN_JET V</h1>
+        <p class="section-subtitle" data-animation="fade-up">숨겨진 V라인을 되찾다.</p>
+        <div class="image-container" data-animation="fade-in">
+
+
+            [Image of facial contour before and after]
+
+        </div>
+        <div data-animation="fade-up">
+            <p class="product-info">
+                <strong>IN_JET V</strong>는 얼굴 윤곽을 더 또렷하게 만들어주는 고효능 지방 연소 부스터입니다. <strong>L-카르니틴</strong>과 <strong>가시칠엽수추출물</strong>, <strong>만주자작나무잎추출물</strong> 등 지방 연소를 촉진하는 핵심 성분이 함유되어 있습니다.
+            </p>
+            <p class="product-info" data-animation="fade-up">
+                피부 깊숙이 흡수되어 지방을 분해하는 동시에, 피부 탄력을 강화하여 처짐 없이 슬림하고 탄탄한 라인을 완성합니다.
+            </p>
+            <h3 class="product-info" style="font-weight: 600; font-size: 22px; margin-top: 50px;">주요 성분과 역할</h3>
+            <ul class="detail-list">
+                <li data-animation="fade-up">
+                    <strong>L-카르니틴</strong>: 리신과 메티오닌에서 합성되는 아미노산 유래 화합물로, 지방산을 미토콘드리아로 운반하여 에너지로 연소시키는 필수 운반체 역할을 합니다.
+                </li>
+                <li data-animation="fade-up">
+                    <strong>가시칠엽추출물</strong>: 강력한 항산화, 항염 효과로 지방 분해 과정에서 발생할 수 있는 활성산소(ROS)를 제거하여 조직 손상을 최소화하고, 염증, 붓기, 통증을 완화합니다.
+                </li>
+                <li data-animation="fade-up">
+                    <strong>만주자작나무잎추출물</strong>: 직접적인 지방 분해보다는 항산화, 항염, 순환 개선을 통해 지방 분해 효과를 보조하고 제품의 안정성을 높입니다.
+                </li>
+            </ul>
+        </div>
+        <div class="image-container" data-animation="fade-in">
+
+        </div>
+        <div data-animation="fade-up">
+            <h3 class="product-info" style="font-weight: 600; font-size: 22px; margin-top: 50px;">안전성과 효과</h3>
+            <p class="product-info" data-animation="fade-up">
+                일반적인 DC/PPC 단일형 지방 분해 제품과 달리, IN_JET V는 식물 추출물과 용매, 방부제를 통해 피부 자극을 최소화하고 제형을 안정화했습니다. 카르니틴과 항산화 성분을 병용하여 안정적으로 지방을 감소시키고, 주변 피부 조직 손상 없이 지방 세포만 타겟팅합니다.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- End Content Here -->
+
+<script>
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2 // 20% 보였을 때 애니메이션 실행
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animated');
+                observer.unobserve(entry.target); // 한 번만 실행되도록
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('[data-animation="fade-up"], [data-animation="fade-in"]').forEach(el => {
+        observer.observe(el);
+    });
+</script>
+
+
 <script src="assets/js/jquery-1.11.0.min.js"></script>
 <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
